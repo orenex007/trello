@@ -1,0 +1,324 @@
+/* Reset */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background: #1f2227;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Navigation */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Search */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 10px;
+}
+
+.search {
+    width: 220px;
+    background: #31353c;
+    border: none;
+    padding: 10px 40px 10px 10px;
+    border-radius: 6px;
+    color: white;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+}
+
+
+/* Auth Buttons */
+.auth-buttons a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 12px;
+    margin-left: 20px;
+}
+
+.auth-buttons a:nth-child(2) {
+    border: 1px white solid;
+}
+
+.btn {
+    width: 100%;
+    padding: 25px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #218838;
+}
+
+.btn-primary {
+    border: 1px solid #0366d6;
+    background: #0366d6;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    border: 1px solid #0366d6;
+    border-radius: 6px;
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 15px 10px;
+    margin: 5px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #31353c;
+    color: white;
+    padding: 50px;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background-image: url("https://web.archive.org/web/20180901030133im_/https://assets-cdn.github.com/images/modules/site/heroes/simple-codelines.svg");
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero p {
+    max-width: 350px;
+    color: #7d8488;
+    /*text-align: left;*/
+    position: relative;
+    bottom: 5px;
+}
+
+strong{
+    color: white;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    right: 50px;
+}
+
+/* Form */
+.sign-up-form {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #ebeded;
+    color: #676773;
+    border-radius: 6px;
+    padding: 25px;
+}
+
+.sign-up-form .terms2{
+    text-align: center;
+}
+
+.input-field {
+    width: 90%;
+    max-width: 350px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: #ebeded;
+}
+
+.input-field:focus {
+    border: 1px solid #039ed6;
+    outline: none;
+    background: white;
+}
+
+.terms{
+    font-size: 12px;
+    margin: 0;
+}
+.terms a{
+    color: #0365d6;
+    text-decoration: none;
+}
+.terms2{
+    font-size: 12px;
+}
+.terms2 a{
+    color: #0365d6;
+    text-decoration: none;
+}
+
+.sign-up,
+.input-field,
+.btn {
+    border-radius: 6px;
+}
+
+/* Enterprise Section */
+.enterprise {
+    text-align: center;
+    width: 100%;
+}
+
+.enterprise p {
+    max-width: 720px;
+    margin: 0 auto 30px;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Media Queries */
+
+@media (max-width: 1038px) {
+    .auth-buttons a{
+        padding: 5px 5px;
+    }
+}
+
+@media (max-width: 850px) {
+    .nav-links, .search-container, .auth-buttons a:first-child {
+        display: none;
+    }
+    .nav-links {
+        display: none;
+    }
+    .d-flex{
+        display: none;
+    }
+    .sign-in {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-right: auto;
+    }
+
+    .hero {
+        text-align: center;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        text-align: left;
+
+    }
+
+    .hero p {
+        font-size: 14px;
+        max-width: none;
+        text-align: left;
+        margin: auto;
+    }
+
+    .hero-text {
+        gap: 20px;
+        position: relative;
+        right: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .sign-up-form label,
+    .sign-up-form input,
+    .sign-up-form p {
+        display: none;
+    }
+
+    .sign-up-form {
+        padding: 0;
+        height: 0;
+        position: relative;
+        left: 20px;
+        bottom: 50px;
+    }
+
+    .hero {
+        height: 250px;
+        flex-wrap: wrap;
+    }
+
+    .hero h1{
+        text-align: center;
+    }
+
+    .hero p{
+        text-align: center;
+        margin: 10px;
+    }
+
+    .hero-text {
+        gap: 0;
+        position: relative;
+        right: 10px;
+    }
+
+    .btn {
+        max-width: 250px;
+        position: relative;
+        right: 25px;
+        top: 20px;
+    }
+    .enterprise {
+        position: relative;
+        top: 30px;
+    }
+    .buttons a {
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: 5px auto;
+    }
+}
+
+
