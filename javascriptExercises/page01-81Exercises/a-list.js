@@ -21,15 +21,21 @@ function prepend(value, list) {
 function nth(list, index) {
     let count = 0;
     for (let current = list; current !== null; current = current.rest) {
-        if (count === index) return current.value;
+        if (count === index) {
+            return current.value;
+        }
         count++;
     }
     return undefined;
 }
 
 function nthRecursive(list, index) {
-    if (list === null) return undefined;
-    if (index === 0) return list.value;
+    if (list === null) {
+        return undefined;
+    }
+    if (index === 0) {
+        return list.value;
+    }
     return nthRecursive(list.rest, index - 1);
 }
 
