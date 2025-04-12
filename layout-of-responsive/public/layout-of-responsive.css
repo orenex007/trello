@@ -36,6 +36,10 @@ nav {
     text-decoration: none;
 }
 
+.fa-github {
+    font-size: 30px;
+}
+
 /* Search */
 .search-container {
     position: relative;
