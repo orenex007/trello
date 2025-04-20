@@ -1,9 +1,9 @@
 function getElementsByTagName(node, tagName) {
-    let elements = [];
-    tagName = tagName.toUpperCase();
+    const elements = [];
+    const tagNameForUpper = tagName.toUpperCase();
 
-    function traverse(currentNode){
-        if(currentNode.nodeName.toUpperCase() === tagName){
+    function traverse(currentNode) {
+        if (currentNode.nodeName.toUpperCase() === tagNameForUpper) {
             elements.push(currentNode);
         }
 
@@ -16,5 +16,5 @@ function getElementsByTagName(node, tagName) {
     return elements;
 }
 
-let paragraphs = getElementsByTagName(document.body, "p");
+const paragraphs = getElementsByTagName(document.body, "p");
 console.log(paragraphs);

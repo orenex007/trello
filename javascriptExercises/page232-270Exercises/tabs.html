@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <link rel="stylesheet" href="public/tabs.css">
+    <link rel="stylesheet" href="public/tabs.css">
 </head>
 <body>
 
-<div id="tab-panel">
-  <section data-tabname="blue">BLUE!</section>
-  <section data-tabname="red">RED!</section>
-  <section data-tabname="green">GREEN!</section>
+<h1>Tabs</h1>
+<div class="tab">
+    <button class="dataTabName" onclick="asTabs('blue')">BLUE!</button>
+    <button class="dataTabName" onclick="asTabs('red')">RED!</button>
+    <button class="dataTabName" onclick="asTabs('green')">GREEN!</button>
 </div>
+
+<div id="blue" class="stickingOut">
+    <h1>Blue</h1>
+</div>
+
+<div id="red" class="stickingOut">
+    <h1>Red</h1>
+</div>
+
+<div id="green" class="stickingOut">
+    <h1>Green</h1>
+</div>
+
 
 </body>
 <script src="publicJS/tabs.js"></script>

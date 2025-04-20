@@ -1,5 +1,5 @@
 const isEven = function(even){
-    if (even == 0){
+    if (even == 0) {
         return true;
     }
     else if (even == 1 || even < 0) {
