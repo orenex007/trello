@@ -1,9 +1,0 @@
-html, body {
-    overflow: hidden;
-}
-p {
-    font-size: 100px;
-    text-align: center;
-    position: relative;
-    top: 50%;
-}
