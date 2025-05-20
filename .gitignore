@@ -1,5 +1,6 @@
 # IDEs
 .idea/
+.idea/carousel-component
 *.iml
 
 #WebStorm
